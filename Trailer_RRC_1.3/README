@@ -1,0 +1,92 @@
+Smart Crane Control System using Industrial Shields ESP32 PLC14
+
+This project is a smart crane control system developed using the Industrial Shields ESP32 PLC14 and a BLE-based mobile application. The system enables wireless crane operation, real-time monitoring, user management, and web-based configuration.
+
+Features
+BLE Mobile App Control
+
+The ESP32 PLC14 connects with a BLE mobile application to control crane operations wirelessly. The mobile app provides the following crane controls:
+
+UP motion control
+DOWN motion control
+LEFT motion control
+RIGHT motion control
+Emergency Stop (E-STOP)
+
+The BLE connection allows operators to control the crane safely and conveniently from a mobile device.
+
+Integrated Webserver
+
+The PLC14 hosts a built-in webserver for monitoring, configuration, and system management.
+
+Webserver Functions
+Real-Time Monitoring
+
+The web dashboard displays:
+
+BLE mobile app connection status
+Current crane motion status
+UP
+DOWN
+LEFT
+RIGHT
+STOP
+E-STOP status
+
+This allows operators and administrators to monitor the crane system in real time from any browser connected to the network.
+
+User Management System
+
+The webserver includes a user management section for BLE application authentication.
+
+Features
+Add new users
+Manage BLE app login credentials
+Restrict unauthorized access to crane controls
+
+This improves system security and user access control.
+
+Output Configuration
+
+The system includes an output configuration page accessible through the webserver.
+
+Features
+Configure PLC output pin assignments
+Change output mappings without modifying firmware
+Flexible setup for different crane wiring configurations
+Network Settings (Phase 2)
+
+In Phase 2, a new Network Settings section was added to the webserver.
+
+Features
+Edit BLE device name
+Configure WiFi SSID
+Configure WiFi password/credentials
+Update network settings directly from the web interface
+
+This allows easy reconfiguration of communication settings without uploading new firmware to the PLC.
+
+Motion Expansion (Phase 3)
+
+In Phase 3, two additional crane motion controls were added:
+
+LEFT motion
+RIGHT motion
+
+The mobile app, PLC logic, and webserver monitoring system were updated to support these new motion outputs.
+
+This enables multi-directional crane movement and improves overall crane operation flexibility.
+
+Technologies Used
+Industrial Shields ESP32 PLC14
+ESP32 BLE
+Embedded Webserver
+WiFi Communication
+Arduino Framework
+HTML / CSS / JavaScript
+Applications
+Industrial crane automation
+Wireless crane control systems
+Smart hoist systems
+Industrial IoT monitoring
+Remote machine operation
